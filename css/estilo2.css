@@ -1,0 +1,277 @@
+body {
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    width: 100%; /* Ocupa el 100% del ancho de la pantalla */
+    height: 100%; /* Ocupa el 100% de la altura de la pantalla */
+}
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f0daae;
+    padding: 20px; /* Espaciado interno */
+    border-bottom: 2px solid #ddd;
+    width: 100%; 
+    box-sizing: border-box; 
+    min-height: 100%;
+    
+}
+
+#logo img {
+    width: 120px; /* Ancho del logo */
+}
+
+/* Estilo de la barra de navegación */
+.botones ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Espacio entre los botones */
+}
+
+.botones ul li a {
+    text-decoration: none;
+    color: #3c2617;
+    font-weight: bold;
+    padding: 8px 15px; /* Espaciado interno de los botones */
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.botones ul li a:hover {
+    background-color: #3c2617; /* Color de fondo al pasar el cursor */
+    color: #f0daae;
+}
+
+/* Estilo de contacto */
+.contacto ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacto ul li {
+    margin-bottom: 5px; /* Espacio entre elementos de contacto */
+    font-size: 16px; /* Tamaño de letra */
+}
+
+.contacto ul li a {
+    text-decoration: none;
+    color: #3c2617; /* Color de los enlaces */
+    font-weight: bold;
+}
+
+.contacto ul li a:hover {
+    text-decoration: underline; /* Subrayar al pasar el cursor */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .encabezado {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .botones ul {
+        flex-direction: column; /* Cambiar a columna en menú de botones */
+    }
+
+    .botones ul li {
+        margin-bottom: 10px; /* Espacio inferior en vista móvil */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cuerpo principal */
+.cuerpo {
+    display: flex;
+    align-items: flex-start; /* Alinear el inicio de las cajas */
+    justify-content: center; /* Centrar horizontalmente las cajas */
+    flex-wrap: wrap; /* Permite que las cajas se muevan a la siguiente línea */
+    background-color: #895d2b;
+    padding: 5%;
+}
+
+.productos {
+    flex: 1; /* Todas las cajas tendrán el mismo tamaño */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre imagen y botón */
+    max-width: 232px; /* Ancho máximo de cada producto */
+    text-align: center; /* Centra el texto del botón */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    margin: 30px; /* Espaciado entre cajas */
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f0daae;
+    text-align: center; 
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 20%; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    width: 60px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.boton:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Sombra al pasar el cursor */
+    background-color: #fff4d7c0; /* Color de fondo al pasar el cursor */
+    color: #603301;
+    transform: scale(1.1); /* Escala al pasar el cursor */
+}
+
+.cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.productos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Aplicación de distintos efectos en cada imagen según su clase */
+.productos:nth-child(1) img {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.productos:nth-child(2) img {
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
+}
+.productos:nth-child(3) img {
+    opacity: 0.6;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.productos:nth-child(4) img {
+    transform: rotate(3deg);
+    transition: transform 0.3s ease;
+}
+.productos:nth-child(5) img {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+.productos:nth-child(6) img {
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+.productos:nth-child(7) img {
+    opacity: 0.9;
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.productos:nth-child(8) img {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.productos:nth-child(9) img {
+    transform: rotate(2deg);
+    transition: transform 0.3s ease;
+}
+.productos:nth-child(10) img {
+    transform: scale(1.05);
+    opacity: 0.85;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.productos:nth-child(11) img {
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+.productos:nth-child(12) img {
+    transform: rotate(-4deg);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para resaltar */
+.productos img:hover {
+    transform: rotate(0) scale(1.1);
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pie de página */
+.pie {
+    background-color: #f0daae; /* Color de fondo */
+    color: #3c2617; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    display: flex; /* Usar flexbox para disposición */
+    justify-content: space-around; /* Espacio entre los elementos */
+    flex-wrap: wrap; /* Permitir que los elementos se muevan a la siguiente línea en pantallas pequeñas */
+    text-align: left; /* Alinear texto a la izquierda */
+    width: 97%; /* Ocupa el 100% del ancho de la pantalla */
+}
+
+.pie h2 {
+    margin-bottom: 10px; /* Espacio debajo de los encabezados */
+    font-size: 20px; /* Tamaño del encabezado */
+    font-family: 'Arial', sans-serif; /* Tipo de letra */
+}
+
+.pie ul {
+    list-style-type: none; /* Quitar los puntos de la lista */
+    padding: 0; /* Quitar el padding por defecto */
+}
+
+.pie li {
+    margin: 5px 0; /* Espacio entre elementos de la lista */
+}
+
+.pie a {
+    color: #3c2617; /* Color de los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    transition: color 0.3s; /* Transición para el color del texto */
+}
+
+.pie a:hover {
+    color: #3498db; /* Color al pasar el cursor */
+    text-decoration: none;
+}
+
+.fa-solid {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
